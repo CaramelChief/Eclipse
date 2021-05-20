@@ -9,3 +9,5 @@ async def test(ctx, arg):
 @bot.command()
 async def hi(ctx):
     await ctx.send('Hello ' + str(ctx.author.name) + '! :)')
+
+    bot.run(ODQwMjIyNjUyNDgzMzcxMDQ4.YJVEUg.H_q2dWYzrGxFPysNAspeIFEpiyo)
