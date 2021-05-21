@@ -11,4 +11,4 @@ async def test(ctx, arg):
 async def hi(ctx):
     await ctx.send('Hello ' + str(ctx.author.name) + '! :)')
 
-bot.run('ODQwMjIyNjUyNDgzMzcxMDQ4.YJVEUg.H_q2dWYzrGxFPysNAspeIFEpiyo')
+bot.run(DISCORD_TOKEN)
