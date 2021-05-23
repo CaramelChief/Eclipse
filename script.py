@@ -9,6 +9,14 @@ DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 
 bot = commands.Bot(command_prefix='-')
 
+@bot.event
+async def on_ready():
+    global botUptime
+    botUptime = datetime.utcnow()
+    print('Logged into Discord as: ')
+    print(bot.user.name + bot.user.discriminator)
+    print('---------')
+
 @bot.command()
 async def test(ctx, arg):
     await ctx.send(arg)
